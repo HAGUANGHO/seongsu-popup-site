@@ -1,0 +1,242 @@
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f4f1;
+  --text: #1f1d1a;
+  --muted: #6b6560;
+  --line: #e6e1db;
+  --accent: #e8590c;
+  --accent-soft: #fff0e6;
+  --popup: #e8590c;
+  --exhibit: #7048e8;
+  --event: #1c7ed6;
+  --ending: #c92a2a;
+  --soon: #2b8a3e;
+  --soon-strong: #2b8a3e;
+  --gift-bg: #fff6ec;
+  --map-filter: none;
+  /* 지도가 카드·점보다 튀지 않게 옅게 깐다 */
+  --map-opacity: .6;
+  --map-dim: rgb(10 15 12 / 45%);
+  --shadow: 0 2px 10px rgba(0, 0, 0, .12);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1b19;
+    --bg-soft: #282522;
+    --text: #f1ede8;
+    --muted: #a8a19a;
+    --line: #3a3632;
+    --accent: #ff8a3d;
+    --accent-soft: #3a2618;
+    --popup: #ff8a3d;
+    --exhibit: #9775fa;
+    --event: #4dabf7;
+    --ending: #ff6b6b;
+    --soon: #69db7c;
+    --soon-strong: #2f9e44;
+    --gift-bg: #2d241c;
+    /* 컬러는 살리고 밝기만 낮춘다 */
+    --map-filter: brightness(.75) contrast(1.1);
+    --map-opacity: .7;
+    --map-dim: rgb(0 0 0 / 55%);
+    --shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Malgun Gothic', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+a { color: var(--accent); }
+button { font: inherit; color: inherit; }
+[hidden] { display: none !important; }
+
+#map { position: fixed; inset: 0; z-index: 0; background: var(--bg-soft); }
+#map .leaflet-tile-pane { filter: var(--map-filter); opacity: var(--map-opacity); }
+/* 고른 것 강조: 지도 전체를 덮는 어두운 막. 지도를 따라 움직이는 층이라 넉넉히 크게 깐다 (국토종주와 같은 기준) */
+.map-dim {
+  position: absolute; top: -100000px; left: -100000px; width: 200000px; height: 200000px;
+  background: var(--map-dim); opacity: 0; transition: opacity .15s;
+}
+.map-focus .map-dim { opacity: 1; }
+
+/* ---------- 카드 ---------- */
+
+.sheet {
+  position: fixed;
+  z-index: 500;
+  top: 16px; left: 16px; bottom: 16px;
+  width: 440px;
+  display: flex; flex-direction: column;
+  background: var(--bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  transition: transform .2s;
+}
+.sheet-handle { display: none; }
+.sheet-head { padding: 18px 18px 0; border-bottom: 1px solid var(--line); }
+.sheet-head h1 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
+.updated { margin: 2px 0 10px; font-size: 13px; color: var(--muted); }
+.sheet-body { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 14px 18px 18px; }
+
+.tabs { display: flex; gap: 4px; }
+.tabs button {
+  flex: 1; padding: 10px 0; border: 0; background: none; cursor: pointer;
+  font-weight: 600; color: var(--muted); border-bottom: 3px solid transparent;
+}
+.tabs button[aria-selected="true"] { color: var(--text); border-color: var(--accent); }
+.tabs b { color: var(--accent); }
+
+/* ---------- 칩 ---------- */
+
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+.chip {
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--bg); cursor: pointer; font-size: 14px;
+}
+.chip[aria-pressed="true"] { background: var(--text); border-color: var(--text); color: var(--bg); font-weight: 600; }
+.chip.kind[aria-pressed="true"].popup { background: var(--popup); border-color: var(--popup); color: #fff; }
+.chip.kind[aria-pressed="true"].exhibit { background: var(--exhibit); border-color: var(--exhibit); color: #fff; }
+.chip.kind[aria-pressed="true"].event { background: var(--event); border-color: var(--event); color: #fff; }
+.chip.kind::before { content: '○ '; }
+.chip.kind[aria-pressed="true"]::before { content: '✓ '; }
+.count { margin: 4px 0 8px; font-size: 13px; color: var(--muted); }
+
+/* ---------- 목록 카드 ---------- */
+
+.cards, .stops { list-style: none; margin: 0; padding: 0; }
+.card { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+.card-main, .stop-main {
+  display: flex; flex-direction: column; gap: 2px; width: 100%;
+  padding: 12px 14px 8px; border: 0; background: none; text-align: left; cursor: pointer;
+}
+.perk .card-main { cursor: default; }
+/* 카드 안 어디에 올려도 카드 전체 색이 바뀐다 */
+.card:hover, .stop:not(.start):hover { background: var(--bg-soft); }
+.card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 2px; }
+.card-title { font-size: 16px; line-height: 1.35; word-break: keep-all; overflow-wrap: anywhere; }
+.card-meta { font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.card-about { font-size: 14px; overflow-wrap: anywhere; }
+.card-meta.nopin { font-size: 12px; }
+
+/* 사은품 */
+.gifts { list-style: none; margin: 6px 0 0; padding: 8px 10px; border-radius: 10px; background: var(--gift-bg); }
+.gifts li { display: flex; align-items: baseline; gap: 6px; font-size: 13px; line-height: 1.45; }
+/* 글이 길어도 말머리 옆에서 시작하고, 글 칸 안에서만 줄을 바꾼다 */
+.gifts li > span:last-child { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.gifts li + li { margin-top: 4px; }
+.gift-icon { flex: none; }
+.how { flex: none; padding: 0 6px; border-radius: 5px; font-size: 12px; font-weight: 700; color: #fff; background: var(--muted); }
+.how.rush { background: var(--ending); }
+.how.luck { background: var(--exhibit); }
+.how.sure { background: var(--soon-strong); }
+.how.buy { background: var(--event); }
+.chip.gift[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.card-actions { display: flex; gap: 6px; padding: 0 14px 12px; }
+.empty { padding: 30px 0; text-align: center; color: var(--muted); }
+
+.badge { display: inline-block; padding: 1px 8px; border-radius: 6px; font-size: 12px; font-weight: 700; color: #fff; }
+.badge.popup { background: var(--popup); }
+.badge.exhibit { background: var(--exhibit); }
+.badge.event { background: var(--event); }
+.status { font-size: 12px; font-weight: 600; padding: 1px 0; color: var(--muted); }
+.status.ending { color: var(--ending); }
+.status.soon { color: var(--soon); }
+.status.new { color: var(--accent); }
+
+/* ---------- 버튼 ---------- */
+
+.btn {
+  padding: 8px 14px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--bg); cursor: pointer; font-weight: 600; text-decoration: none; color: var(--text);
+}
+.btn.small { padding: 5px 10px; font-size: 13px; border-radius: 8px; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.btn.ghost { border-color: transparent; color: var(--accent); }
+.icon-btn { border: 0; background: none; cursor: pointer; color: var(--muted); padding: 8px; font-size: 14px; }
+
+/* ---------- 동선 ---------- */
+
+.field { display: flex; align-items: center; gap: 10px; font-weight: 600; margin-bottom: 10px; }
+.field select {
+  flex: 1; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--bg); color: var(--text); font: inherit;
+}
+.plan-actions { display: flex; gap: 8px; margin-bottom: 10px; }
+.plan-summary { font-size: 14px; font-weight: 600; margin: 4px 0 10px; }
+.hint { color: var(--muted); font-size: 14px; }
+.stop { display: flex; align-items: center; gap: 10px; border: 1px solid var(--line); border-radius: 12px; }
+.stop.start { padding: 10px 14px; background: var(--bg-soft); }
+.stop-main { padding: 10px 0; }
+.num {
+  flex: none; min-width: 28px; height: 28px; padding: 0 6px; margin-left: 10px;
+  display: grid; place-items: center; border-radius: 999px;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: 13px;
+}
+.stop.start .num { margin-left: 0; background: var(--text); color: var(--bg); }
+.leg { padding: 6px 0 6px 24px; margin-left: 14px; border-left: 2px dashed var(--line); font-size: 13px; color: var(--muted); }
+
+.num-pin {
+  display: grid; place-items: center;
+  border-radius: 999px; background: var(--accent); color: #fff; font-weight: 700; font-size: 13px;
+  border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
+}
+.num-pin.start { width: auto !important; height: auto !important; padding: 2px 8px; background: #1f1d1a; white-space: nowrap; }
+
+/* ---------- 말풍선 ---------- */
+
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: var(--bg); color: var(--text); }
+.leaflet-popup-content { margin: 12px 14px; font-family: inherit; }
+.pop strong { display: block; margin: 4px 0 2px; font-size: 15px; }
+.pop p { margin: 2px 0; font-size: 13px; color: var(--muted); }
+.pop .muted { font-style: italic; }
+.pop p.about { color: var(--text); }
+.pop-info { margin-top: 8px; padding-top: 6px; border-top: 1px solid var(--line); }
+.pop-actions { display: flex; align-items: center; gap: 8px; margin-top: 8px; padding-top: 10px; border-top: 1px solid var(--line); }
+
+/* ---------- 출처 ---------- */
+
+.sources { margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+.sources p { margin: 4px 0; }
+.notice { font-weight: 600; color: var(--text); }
+
+.leaflet-control-attribution { font-size: 11px; }
+
+/* ---------- 휴대폰: 아래 시트 ---------- */
+
+@media (max-width: 720px) {
+  .sheet {
+    top: auto; left: 0; right: 0; bottom: 0;
+    width: auto; height: 62vh;
+    border-radius: 16px 16px 0 0;
+  }
+  body.sheet-closed .sheet { transform: translateY(calc(100% - 56px)); }
+  .sheet-handle {
+    display: block; width: 100%; height: 22px; border: 0; background: none; cursor: pointer; flex: none;
+  }
+  .sheet-handle span { display: block; width: 44px; height: 5px; margin: 8px auto 0; border-radius: 3px; background: var(--line); }
+  .sheet-handle b { display: none; }
+  /* 접혔을 때는 눌러 볼 수 있는 알약 버튼 */
+  body.sheet-closed .sheet-handle { height: 56px; display: grid; place-items: center; }
+  body.sheet-closed .sheet-handle span { display: none; }
+  body.sheet-closed .sheet-handle b {
+    display: block; padding: 8px 18px; border-radius: 999px;
+    background: var(--accent); color: #fff; font-size: 15px;
+  }
+  .sheet-head { padding: 4px 16px 0; }
+  .sheet-head h1 { font-size: 18px; }
+  .sheet-body { padding: 12px 16px 24px; }
+  /* 지도 출처는 늘 보이게: 시트 위로 올린다 */
+  .leaflet-bottom { bottom: 62vh; transition: bottom .2s; }
+  body.sheet-closed .leaflet-bottom { bottom: 56px; }
+}

@@ -1,0 +1,33 @@
+# 매일 아침 6시(한국 시간)에 팝업·행사를 다시 모으고, 바뀌었으면 커밋한다.
+# 비밀값: SEOUL_API_KEY (서울 열린데이터광장 인증키), SGIS_KEY·SGIS_SECRET (통계청 SGIS, 주소 → 좌표)
+name: collect
+
+on:
+  schedule:
+    - cron: '0 21 * * *'   # UTC 21:00 = KST 06:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: 모으기
+        env:
+          SEOUL_API_KEY: ${{ secrets.SEOUL_API_KEY }}
+          SGIS_KEY: ${{ secrets.SGIS_KEY }}
+          SGIS_SECRET: ${{ secrets.SGIS_SECRET }}
+        run: python tools/collect.py
+      - name: 바뀐 것 올리기
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/data/events.json src/data/perks.json data/seen.json data/geocode-cache.json
+          git diff --cached --quiet || git commit -m "팝업 목록 갱신 $(TZ=Asia/Seoul date +%F)"
+          git push
