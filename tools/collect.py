@@ -116,6 +116,29 @@ def kind_of(title, category=''):
     return 'event'
 
 
+# 분야 (화면의 분야 칩). manual.json에 topic이 있으면 그것, 없으면 제목·브랜드·소개 낱말로 어림한다. 앞의 것이 먼저 잡힌다
+TOPICS = ('beauty', 'fashion', 'character', 'food', 'tech', 'culture', 'market', 'etc')
+TOPIC_WORDS = [
+    ('market', r'장터|마켓|플리|야장|직거래'),
+    ('food', r'먹거리|음식|푸드|라면|분식|카페|커피|디저트|맥주|와인|소주|과자|스낵'),
+    ('beauty', r'뷰티|화장품|메이크업|스킨|틴트|립스틱|향수|퍼퓸|헤어|네일|치약'),
+    ('fashion', r'패션|의류|옷|신발|스니커|가방|안경|주얼리|애슬레저|컬렉션'),
+    ('character', r'캐릭터|굿즈|앨범|아이돌|게임|애니|웹툰|피규어|포켓몬|산리오'),
+    ('tech', r'\bAI\b|인공지능|통신|모바일|스마트폰|로봇|테크|\bIT\b'),
+    ('culture', r'공연|콘서트|연극|뮤지컬|클래식|국악|무용|영화|상영|전시|미술|아트|갤러리|개인전|책방|도서|서가|강연|강좌|교육'),
+]
+
+
+def topic_of(text, category=''):
+    # 서울시 자료의 분류는 축제만 빼면 공연·전시·교육 같은 문화 행사다
+    if category and not category.startswith('축제'):
+        return 'culture'
+    for topic, words in TOPIC_WORDS:
+        if re.search(words, text):
+            return topic
+    return 'etc'
+
+
 # ---------- 1. 서울시 문화행사 정보 ----------
 
 def seoul_events(key, today):
@@ -161,6 +184,7 @@ def seoul_filter(rows, today):
             'id': 'seoul-' + re.sub(r'\D', '', r.get('HMPG_ADDR', '').split('cultcode=')[-1].split('&')[0]) or title,
             'title': title,
             'kind': kind_of(title, r.get('CODENAME', '')),
+            'topic': topic_of(title, r.get('CODENAME', '')),
             'start': s,
             'end': e,
             'place': r.get('PLACE', '').strip(),
@@ -283,6 +307,7 @@ def manual_events(today, cache, sgis=None):
             'id': 'm-' + m['id'],
             'title': m['title'],
             'kind': m.get('kind') or kind_of(m['title']),
+            'topic': m.get('topic') or topic_of(f"{m['title']} {m.get('brand', '')} {m.get('about', '')}"),
             'start': m['start'],
             'end': m['end'],
             'place': m.get('place', ''),
@@ -295,6 +320,7 @@ def manual_events(today, cache, sgis=None):
             'link': m['link'],
             'source': 'manual',
             **({'search': m['search']} if 'search' in m else {}),
+            **({'reserve': True} if m.get('reserve') else {}),
         }
         for g in ev['gifts']:
             if g.get('how') and g['how'] not in GIFT_HOWS:

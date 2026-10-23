@@ -6,6 +6,18 @@ const KINDS = {
   exhibit: { label: '전시', color: 'var(--exhibit)' },
   event: { label: '행사', color: 'var(--event)' },
 };
+// 분야 (collect.TOPICS). 모은 자료로 어림한 것이라 화면에 '직접 판단해 달라'고 적는다
+const TOPICS = {
+  beauty: '뷰티·향', fashion: '패션', character: '캐릭터·K팝·게임', food: '먹거리',
+  tech: 'IT·통신', culture: '공연·전시·책', market: '장터·마켓', etc: '생활·기타',
+};
+// 혜택 칩 (하나만 고른다)
+const GIFTS = [
+  ['free', '🎁 무료로 받거나 해 볼 수 있는 곳', (ev) => hasFree(ev)],
+  ['sure', '✅ 가면 꼭 받는 곳', (ev) => hasHow(ev, '100% 증정', '참여 시 증정')],
+  ['rush', '⏰ 선착순', (ev) => hasHow(ev, '선착순')],
+  ['luck', '🎲 추첨·뽑기', (ev) => hasHow(ev, '추첨', '뽑기')],
+];
 const WHEN = [
   ['all', '전체'],
   ['open', '오늘 열림'],
@@ -100,7 +112,9 @@ const state = {
   events: [],
   when: 'all',
   kinds: new Set(Object.keys(KINDS)),
-  freeOnly: false,
+  topic: 'all',
+  gift: null,           // GIFTS의 id
+  walkIn: false,        // 예약 없이 가는 곳만
   plan: load('seongsu.plan', []),        // 담은 곳 id
   start: load('seongsu.start', STARTS[0].id),
   tab: 'list',
@@ -299,8 +313,10 @@ function focusEvent(ev) {
 
 function visibleEvents() {
   const today = todayDate();
+  const gift = GIFTS.find(([id]) => id === state.gift);
   return state.events.filter((ev) => state.kinds.has(ev.kind) && matchesWhen(ev, state.when, today)
-    && (!state.freeOnly || hasFree(ev)));
+    && (state.topic === 'all' || ev.topic === state.topic)
+    && (!gift || gift[2](ev)) && (!state.walkIn || !ev.reserve));
 }
 
 function planButton(ev) {
@@ -318,6 +334,8 @@ function planButton(ev) {
 function hasFree(ev) {
   return (ev.gifts || []).some((g) => g.how !== '구매 시 증정') || /무료/.test(ev.fee || '');
 }
+
+const hasHow = (ev, ...hows) => (ev.gifts || []).some((g) => hows.includes(g.how));
 
 // 사은품 줄: [선착순] 키링 · 하루 100명
 function giftList(ev) {
@@ -338,7 +356,9 @@ function card(ev, today) {
       el('div', { class: 'card-tags' },
         el('span', { class: `badge ${ev.kind}` }, KINDS[ev.kind].label),
         el('span', { class: `status ${st.tone}` }, st.text),
-        isNew && el('span', { class: 'status new' }, '새로 올라옴')),
+        isNew && el('span', { class: 'status new' }, '새로 올라옴'),
+        ev.reserve && el('span', { class: 'status reserve' }, '예약 필요'),
+        TOPICS[ev.topic] && el('span', { class: 'topic' }, TOPICS[ev.topic])),
       el('strong', { class: 'card-title' }, ev.title),
       ev.about && el('span', { class: 'card-about' }, ev.about),
       el('span', { class: 'card-meta' }, `${fmt(day(ev.start))} ~ ${fmt(day(ev.end))}${ev.time ? ' · ' + ev.time : ''}`),
@@ -364,10 +384,24 @@ function renderChips() {
       if (state.kinds.has(id) && state.kinds.size > 1) state.kinds.delete(id); else state.kinds.add(id);
       renderList();
     },
-  }, k.label)), el('button', {
-    type: 'button', class: 'chip gift', 'aria-pressed': String(state.freeOnly),
-    onclick: () => { state.freeOnly = !state.freeOnly; renderList(); },
-  }, '🎁 무료로 받거나 해 볼 수 있는 곳'));
+  }, k.label)));
+  // 분야: 아직 안 끝난 곳에 있는 분야만 칩으로 낸다
+  const today = todayDate();
+  const present = new Set(state.events.filter((e) => matchesWhen(e, 'all', today)).map((e) => e.topic));
+  const topics = document.getElementById('topic-chips');
+  topics.replaceChildren(...[['all', '모든 분야'], ...Object.entries(TOPICS).filter(([id]) => present.has(id))]
+    .map(([id, label]) => el('button', {
+      type: 'button', class: 'chip', 'aria-pressed': String(state.topic === id),
+      onclick: () => { state.topic = id; renderList(); },
+    }, label)));
+  const gifts = document.getElementById('gift-chips');
+  gifts.replaceChildren(...GIFTS.map(([id, label]) => el('button', {
+    type: 'button', class: `chip gift ${id}`, 'aria-pressed': String(state.gift === id),
+    onclick: () => { state.gift = state.gift === id ? null : id; renderList(); },
+  }, label)), el('button', {
+    type: 'button', class: 'chip gift walkin', 'aria-pressed': String(state.walkIn),
+    onclick: () => { state.walkIn = !state.walkIn; renderList(); },
+  }, '🚶 예약 없이 가는 곳'));
 }
 
 function renderList() {

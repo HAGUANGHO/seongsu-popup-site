@@ -109,6 +109,7 @@ button { font: inherit; color: inherit; }
 .chip.kind[aria-pressed="true"].event { background: var(--event); border-color: var(--event); color: #fff; }
 .chip.kind::before { content: '○ '; }
 .chip.kind[aria-pressed="true"]::before { content: '✓ '; }
+.chip-note { margin: 0 0 6px; font-size: 12px; color: var(--muted); }
 .count { margin: 4px 0 8px; font-size: 13px; color: var(--muted); }
 
 /* ---------- 목록 카드 ---------- */
@@ -152,6 +153,8 @@ button { font: inherit; color: inherit; }
 .status.ending { color: var(--ending); }
 .status.soon { color: var(--soon); }
 .status.new { color: var(--accent); }
+.status.reserve { color: var(--event); }
+.topic { font-size: 12px; padding: 1px 0; color: var(--muted); }
 
 /* ---------- 버튼 ---------- */
 
