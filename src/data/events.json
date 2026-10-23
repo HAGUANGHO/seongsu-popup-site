@@ -1,6 +1,6 @@
 {
- "checked": "2026-10-23 17:44",
- "updated": "2026-10-23 17:44",
+ "checked": "2026-10-23 20:25",
+ "updated": "2026-10-23 20:25",
  "events": [
   {
    "id": "seoul-159932",
@@ -604,6 +604,42 @@
    "lat": 37.544935,
    "lng": 127.050525,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-marvis-white-mint-popup",
+   "title": "마비스 'FIND THE SHINING STAR' 팝업",
+   "kind": "popup",
+   "start": "2026-10-28",
+   "end": "2026-11-01",
+   "place": "틸테이블",
+   "address": "서울 성동구 아차산로 120",
+   "time": "",
+   "fee": "",
+   "brand": "마비스",
+   "about": "화이트 민트 치약을 오감으로 체험하는 우주선 콘셉트 공간",
+   "gifts": [
+    {
+     "what": "마비스 치약",
+     "how": "참여 시 증정",
+     "note": "틸테이블·무신사 메가스토어 성수·하루필름 성수점 스탬프 3개 모으면"
+    },
+    {
+     "what": "민트 솜사탕 + 마비스 치약",
+     "how": "구매 시 증정",
+     "note": "무신사 메가스토어 성수 1층, 구매 인증"
+    },
+    {
+     "what": "실버 파우치",
+     "how": "구매 시 증정",
+     "note": "팝업 제품 구매 고객"
+    }
+   ],
+   "link": "http://www.ktnews.com/news/articleView.html?idxno=149613",
+   "source": "manual",
+   "lat": 37.546239,
+   "lng": 127.05076,
+   "approx": true,
+   "added": "2026-10-23"
   },
   {
    "id": "m-google-gemini-snack-campus",
