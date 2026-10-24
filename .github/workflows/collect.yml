@@ -5,6 +5,9 @@ name: collect
 on:
   schedule:
     - cron: '0 21 * * *'   # UTC 21:00 = KST 06:00
+  # 매일 조사(05:00 루틴)가 manual.json·perks.json을 올리면 바로 모은다 (예약 실행이 늦어도 목록이 바로 바뀌게)
+  push:
+    paths: ['data/manual.json', 'data/perks.json']
   workflow_dispatch:
 
 permissions:
