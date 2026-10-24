@@ -1,22 +1,6 @@
 {
- "checked": "2026-10-24 21:40",
+ "checked": "2026-10-25 05:14",
  "perks": [
-  {
-   "id": "everau-galleria-west-visit-gift",
-   "title": "에버에이유 팝업 방문객 증정",
-   "brand": "에버에이유",
-   "channel": "store",
-   "place": "갤러리아 명품관 WEST 2층",
-   "address": "서울 강남구 압구정로 343",
-   "area": "압구정",
-   "start": "2026-10-22",
-   "end": "2026-10-24",
-   "what": "신발·키링·쿠키 등 지정 물품",
-   "how": "방문",
-   "note": "방문객에게 줌, 재고가 떨어지면 일찍 끝나요",
-   "link": "https://www.newspim.com/news/view/20261019001306",
-   "checked": "2026-10-23"
-  },
   {
    "id": "ddp-design-spectrum-stamp-goods",
    "title": "DDP 디자인 스펙트럼 스탬프 굿즈·DIY 키링",
