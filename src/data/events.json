@@ -1,58 +1,7 @@
 {
- "checked": "2026-10-28 09:17",
- "updated": "2026-10-28 09:17",
+ "checked": "2026-10-29 05:17",
+ "updated": "2026-10-29 05:17",
  "events": [
-  {
-   "id": "m-labelgallery-sausage-coffee",
-   "title": "강선미 개인전 '소세지 커피'",
-   "kind": "exhibit",
-   "topic": "culture",
-   "start": "2026-10-07",
-   "end": "2026-10-28",
-   "place": "레이블갤러리",
-   "address": "서울 성동구 성수이로26길 31",
-   "time": "",
-   "fee": "",
-   "brand": "레이블갤러리",
-   "about": "성수 작은 갤러리의 회화 개인전",
-   "gifts": [],
-   "link": "https://labelgallery.co.kr/exhibition/",
-   "source": "manual",
-   "lat": 37.545738,
-   "lng": 127.060982,
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-lotte-xylitol-school",
-   "title": "자일리톨 스쿨",
-   "kind": "popup",
-   "topic": "food",
-   "start": "2026-10-16",
-   "end": "2026-10-28",
-   "place": "서울숲길 24",
-   "address": "서울 성동구 서울숲길 24",
-   "time": "",
-   "fee": "",
-   "brand": "롯데웰푸드",
-   "about": "학교처럼 꾸민 껌·치아 관리 체험 팝업",
-   "gifts": [
-    {
-     "what": "키캡·미니 클리커·파우치 키링 중 하나",
-     "how": "추첨",
-     "note": "현장 사진을 SNS에 올린 사람 중"
-    },
-    {
-     "what": "메모지·지우개·치실 등",
-     "how": "뽑기",
-     "note": "현장 뽑기"
-    }
-   ],
-   "link": "https://www.lcnews.co.kr/news/articleView.html?idxno=209732",
-   "source": "manual",
-   "lat": 37.547878,
-   "lng": 127.039992,
-   "added": "2026-10-22"
-  },
   {
    "id": "m-29cm-loft-encore",
    "title": "29CM × 로프트 문구 앙코르 기획전",
@@ -138,7 +87,7 @@
    "start": "2026-10-16",
    "end": "2026-10-31",
    "place": "무신사 스토어 성수",
-   "address": "",
+   "address": "서울 성동구 성수이로 74",
    "time": "11:00~22:00",
    "fee": "",
    "brand": "무신사 × 조조타운",
@@ -146,7 +95,8 @@
    "gifts": [],
    "link": "https://inews24.com/view/2015732",
    "source": "manual",
-   "nopin": true,
+   "lat": 37.541509,
+   "lng": 127.056362,
    "added": "2026-10-22"
   },
   {
@@ -527,6 +477,33 @@
    "lat": 37.544935,
    "lng": 127.050525,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-nikke-musinsa-popup",
+   "title": "니케 × 무신사 팝업스토어",
+   "kind": "popup",
+   "topic": "character",
+   "start": "2026-11-06",
+   "end": "2026-11-19",
+   "place": "무신사 스토어 성수",
+   "address": "서울 성동구 성수이로 74",
+   "time": "11:00~22:00",
+   "fee": "",
+   "brand": "니케 × 무신사",
+   "about": "게임 니케와 무신사가 함께 여는 협업 팝업",
+   "gifts": [
+    {
+     "what": "입장 티켓 + 조각 스티커 세트",
+     "how": "선착순",
+     "note": "수량이 떨어지면 일찍 끝날 수 있어요"
+    }
+   ],
+   "link": "https://inven.co.kr/webzine/news/?news=322608",
+   "source": "manual",
+   "reserve": true,
+   "lat": 37.541509,
+   "lng": 127.056362,
+   "added": "2026-10-29"
   },
   {
    "id": "m-nongshim-shin-ramyun-bunsik",
