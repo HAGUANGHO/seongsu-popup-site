@@ -1,26 +1,7 @@
 {
- "checked": "2026-10-30 09:40",
- "updated": "2026-10-29 05:17",
+ "checked": "2026-10-31 05:15",
+ "updated": "2026-10-31 05:15",
  "events": [
-  {
-   "id": "m-29cm-loft-encore",
-   "title": "29CM × 로프트 문구 앙코르 기획전",
-   "kind": "popup",
-   "topic": "etc",
-   "start": "2026-09-18",
-   "end": "2026-10-30",
-   "place": "이구홈 성수 2호점",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "29CM · 로프트",
-   "about": "한일 문구 팝업 상품을 다시 파는 기획전",
-   "gifts": [],
-   "link": "https://biz.newdaily.co.kr/site/data/html/2026/09/02/2026090200177.html",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-10-22"
-  },
   {
    "id": "m-mediheal-seoul-edition",
    "title": "메디힐 × 서울시 '서울 에디션' 팝업",
@@ -415,6 +396,46 @@
    "added": "2026-10-22"
   },
   {
+   "id": "m-rejuvie-doremi-seongsu",
+   "title": "리쥬비 도레미약국 성수점 단독 팝업",
+   "kind": "popup",
+   "topic": "beauty",
+   "start": "2026-10-30",
+   "end": "2026-11-12",
+   "place": "도레미약국 성수점",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "파마리서치메디케어 리쥬비",
+   "about": "약국 안에서 만나는 리쥬비 브랜드 체험 공간",
+   "gifts": [],
+   "link": "https://www.cosmorning.com/news/article.html?no=53829",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-10-31"
+  },
+  {
+   "id": "m-spotify-speakeasy-hyukoh",
+   "title": "Spotify SPEAKEASY with 혁오",
+   "kind": "event",
+   "topic": "etc",
+   "start": "2026-11-14",
+   "end": "2026-11-14",
+   "place": "에스팩토리",
+   "address": "서울 성동구 연무장15길 11",
+   "time": "",
+   "fee": "스포티파이 프리미엄 이용자 약 500명 선정 초대",
+   "brand": "스포티파이",
+   "about": "혁오 라이브 6곡과 토크, 플레이리스트 체험존",
+   "gifts": [],
+   "link": "https://sports.khan.co.kr/article/202610240203003",
+   "source": "manual",
+   "reserve": true,
+   "lat": 37.542419,
+   "lng": 127.059111,
+   "added": "2026-10-31"
+  },
+  {
    "id": "m-dragonball-heroes-rise-seoul",
    "title": "드래곤볼 히어로즈 라이즈 아시아 투어 서울",
    "kind": "exhibit",
@@ -506,6 +527,33 @@
    "added": "2026-10-29"
   },
   {
+   "id": "m-cardcaptor-sakura-tea-party",
+   "title": "사쿠라와 토모요의 티 파티 (카드캡터 사쿠라 콜라보 카페)",
+   "kind": "popup",
+   "topic": "character",
+   "start": "2026-11-11",
+   "end": "2026-11-29",
+   "place": "무신사 스페이스 서울숲",
+   "address": "서울 성동구 서울숲2길 43",
+   "time": "",
+   "fee": "사전 예약 필수 (11월 4일부터 팝가에서 예약)",
+   "brand": "카드캡터 사쿠라",
+   "about": "일본 콜라보 카페 굿즈 15종과 캐릭터 음료 6종",
+   "gifts": [
+    {
+     "what": "복제 티켓",
+     "how": "참여 시 증정",
+     "note": "예약하고 입장한 사람에게 줘요, 수량이 떨어지면 끝나요"
+    }
+   ],
+   "link": "https://www.venturesquare.net/?p=1123060",
+   "source": "manual",
+   "reserve": true,
+   "lat": 37.54647,
+   "lng": 127.043465,
+   "added": "2026-10-31"
+  },
+  {
    "id": "m-nongshim-shin-ramyun-bunsik",
    "title": "신라면 분식",
    "kind": "popup",
@@ -524,6 +572,33 @@
    "lat": 37.542493,
    "lng": 127.054305,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-lovelive-15th-seoul-exhibition",
+   "title": "러브라이브! 시리즈 15주년 기념 서울 전시회",
+   "kind": "exhibit",
+   "topic": "character",
+   "start": "2026-11-14",
+   "end": "2026-12-31",
+   "place": "어브 스튜디오",
+   "address": "서울 성동구 아차산로11가길 6",
+   "time": "",
+   "fee": "",
+   "brand": "러브라이브! (타키엘 주최)",
+   "about": "시리즈 15년의 역사·음악·무대를 돌아보는 전시",
+   "gifts": [
+    {
+     "what": "캐릭터 학생증 1종(무작위)",
+     "how": "구매 시 증정",
+     "note": "티켓을 산 사람 모두에게 줘요"
+    }
+   ],
+   "link": "https://enews.imbc.com/News/ViewAmp/520375",
+   "source": "manual",
+   "reserve": true,
+   "lat": 37.546083,
+   "lng": 127.060964,
+   "added": "2026-10-31"
   },
   {
    "id": "m-torriden-connect-seongsu-2026",
