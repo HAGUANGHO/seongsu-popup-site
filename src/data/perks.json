@@ -1,38 +1,6 @@
 {
- "checked": "2026-10-31 09:31",
+ "checked": "2026-11-01 08:58",
  "perks": [
-  {
-   "id": "wconcept-w-hannam-visit-stamp",
-   "title": "W한남 주변 매장 방문 인증 선물",
-   "brand": "W컨셉",
-   "channel": "store",
-   "place": "W한남 (W컨셉 플래그십)",
-   "address": "",
-   "area": "한남",
-   "start": "2026-10-16",
-   "end": "2026-10-31",
-   "what": "무작위 선물",
-   "how": "인증",
-   "note": "W한남에서 지도를 받아 주변 파트너 매장을 돌고 인증하면 선물, 구매 조건 없음",
-   "link": "https://byline.network/2026/10/16_298873/",
-   "checked": "2026-10-23"
-  },
-  {
-   "id": "funforge-hongdae-free-game-room",
-   "title": "펀포지 홍대 게임장 무료 개방",
-   "brand": "펀포지(FUNFORGE)",
-   "channel": "store",
-   "place": "펀포지 홍대 플래그십 'THE FORGE'",
-   "address": "",
-   "area": "홍대",
-   "start": "2026-10-04",
-   "end": "2026-10-31",
-   "what": "게임장 무료 이용, 스타크래프트 테이블탑 게임 체험",
-   "how": "체험",
-   "note": "10월 31일까지 무료 개방",
-   "link": "https://www.hankyung.com/article/202609233609O",
-   "checked": "2026-10-23"
-  },
   {
    "id": "hyundai-sinchon-beauty-festa-diagnosis",
    "title": "신촌 뷰티페스타 무료 피부·퍼스널 컬러 진단",
