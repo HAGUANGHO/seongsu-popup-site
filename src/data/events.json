@@ -1,134 +1,7 @@
 {
- "checked": "2026-11-01 08:58",
- "updated": "2026-11-01 08:58",
+ "checked": "2026-11-02 05:15",
+ "updated": "2026-11-02 05:15",
  "events": [
-  {
-   "id": "seoul-157478",
-   "title": "2026 서로장터",
-   "kind": "event",
-   "topic": "market",
-   "start": "2026-04-26",
-   "end": "2026-11-01",
-   "place": "서울광장, 서울숲, 양재시민의 숲, 잠수교",
-   "lat": 37.54307,
-   "lng": 127.041799,
-   "time": "프로그램별 상이",
-   "fee": "무료",
-   "about": "전국 각지에서 모이는 서울시대표 농수산물 직거래 장터",
-   "gifts": [],
-   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=157478&menuNo=200010",
-   "source": "seoul",
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-naver-nepfesta-2026",
-   "title": "넾페스타 2026",
-   "kind": "event",
-   "topic": "tech",
-   "start": "2026-10-30",
-   "end": "2026-11-01",
-   "place": "앤더슨씨 성수",
-   "address": "서울 성동구 성수일로6길 36",
-   "time": "",
-   "fee": "네이버플러스 멤버십 회원 예매",
-   "brand": "네이버",
-   "about": "네이버플러스 멤버십 회원 전용 축제",
-   "gifts": [
-    {
-     "what": "멤버십 굿즈 (구니백·키링·반다나·담요·콜라·스티커팩)",
-     "how": "100% 증정",
-     "note": "예매하고 온 사람 전원"
-    }
-   ],
-   "link": "https://byline.network/2026/09/05_naver_8/",
-   "source": "manual",
-   "reserve": true,
-   "lat": 37.544471,
-   "lng": 127.053927,
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-skt-runmate-camp",
-   "title": "런메이트 캠프",
-   "kind": "event",
-   "topic": "tech",
-   "start": "2026-10-20",
-   "end": "2026-11-01",
-   "place": "T 팩토리 성수 야외 정원",
-   "address": "서울 성동구 연무장1길 7-1",
-   "time": "11:00~20:00",
-   "fee": "SKT 고객 무료 (AI 러닝 분석은 네이버 예약)",
-   "brand": "SK텔레콤",
-   "about": "러너를 위한 달리기 자세 분석·체험 공간",
-   "gifts": [
-    {
-     "what": "가민 워치·샥즈 이어폰",
-     "how": "추첨",
-     "note": "체험 후 SNS 인증한 사람 중"
-    }
-   ],
-   "link": "https://news.sktelecom.com/232223",
-   "source": "manual",
-   "lat": 37.544935,
-   "lng": 127.050525,
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-marvis-white-mint-popup",
-   "title": "마비스 'FIND THE SHINING STAR' 팝업",
-   "kind": "popup",
-   "topic": "beauty",
-   "start": "2026-10-28",
-   "end": "2026-11-01",
-   "place": "틸테이블",
-   "address": "서울 성동구 아차산로 120",
-   "time": "",
-   "fee": "",
-   "brand": "마비스",
-   "about": "화이트 민트 치약을 오감으로 체험하는 우주선 콘셉트 공간",
-   "gifts": [
-    {
-     "what": "마비스 치약",
-     "how": "참여 시 증정",
-     "note": "틸테이블·무신사 메가스토어 성수·하루필름 성수점 스탬프 3개 모으면"
-    },
-    {
-     "what": "민트 솜사탕 + 마비스 치약",
-     "how": "구매 시 증정",
-     "note": "무신사 메가스토어 성수 1층, 구매 인증"
-    },
-    {
-     "what": "실버 파우치",
-     "how": "구매 시 증정",
-     "note": "팝업 제품 구매 고객"
-    }
-   ],
-   "link": "http://www.ktnews.com/news/articleView.html?idxno=149613",
-   "source": "manual",
-   "lat": 37.543914,
-   "lng": 127.057221,
-   "added": "2026-10-23"
-  },
-  {
-   "id": "m-google-gemini-snack-campus",
-   "title": "스낵이 제미나이 캠퍼스",
-   "kind": "popup",
-   "topic": "tech",
-   "start": "2026-10-30",
-   "end": "2026-11-01",
-   "place": "성수동 한서빌딩",
-   "address": "",
-   "time": "",
-   "fee": "신청 없이 누구나 입장",
-   "brand": "구글 제미나이 × 전과자",
-   "about": "제미나이 기능을 미션으로 해 보는 가상 캠퍼스",
-   "gifts": [],
-   "link": "https://blog.google/intl/ko-kr/company-news/inside-google/gemini-seongsu-meetup-oct-kr/",
-   "source": "manual",
-   "search": "한서빌딩",
-   "nopin": true,
-   "added": "2026-10-22"
-  },
   {
    "id": "m-evan-gliddy-popup",
    "title": "EVAN 캐릭터 '글라이디' 팝업",
@@ -160,6 +33,35 @@
    "lat": 37.542609,
    "lng": 127.05307,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-vitalbeauty-super-glow-sauna",
+   "title": "바이탈뷰티 '슈퍼 글로우 사우나'",
+   "kind": "popup",
+   "topic": "beauty",
+   "start": "2026-10-28",
+   "end": "2026-11-03",
+   "place": "성수동 연무장길",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "바이탈뷰티",
+   "about": "피부 고민을 확인하고 미션을 하는 체험형 공간",
+   "gifts": [
+    {
+     "what": "팝업 한정 굿즈",
+     "how": "추첨",
+     "note": "게임형 미션을 마치면 럭키드로우에 참여해요"
+    },
+    {
+     "what": "무료 스킨 체크 체험",
+     "how": "100% 증정"
+    }
+   ],
+   "link": "https://www.banronbodo.com/news/articleView.html?idxno=33274",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-11-02"
   },
   {
    "id": "m-nylora-eql-seongsu-popup",
@@ -247,6 +149,50 @@
    "lat": 37.544183,
    "lng": 127.054483,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-ali-gacha-sson-da-seongsu",
+   "title": "알리가차쏜다 팝업",
+   "kind": "popup",
+   "topic": "tech",
+   "start": "2026-11-05",
+   "end": "2026-11-08",
+   "place": "성수동 일대 (정확한 장소는 아직 안 알려졌어요)",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "알리익스프레스",
+   "about": "가챠머신 모양 공간에서 전기차 전시와 11초 상품 담기 도전",
+   "gifts": [
+    {
+     "what": "11초 챌린지 성공 시 실물 경품",
+     "how": "참여 시 증정",
+     "note": "전시존 미션을 마치면 도전할 수 있어요. 경품 종류는 안 알려졌어요"
+    }
+   ],
+   "link": "https://www.newsis.com/view/ALSX20261029_0000008016",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-11-02"
+  },
+  {
+   "id": "m-angyeongsu-first-collection",
+   "title": "안경:수 첫 컬렉션 팝업",
+   "kind": "popup",
+   "topic": "fashion",
+   "start": "2026-11-05",
+   "end": "2026-11-09",
+   "place": "무신사 엠프티 성수 인근",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "안경:수",
+   "about": "안경 브랜드의 첫 컬렉션 공개",
+   "gifts": [],
+   "link": "https://www.nc.press/news/articleView.html?idxno=629821",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-11-02"
   },
   {
    "id": "m-fra422-lcdc-soul-award",
@@ -376,6 +322,26 @@
    "lat": 37.538849,
    "lng": 127.055578,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-silian-rail-lcdc-popup",
+   "title": "실리언 레일 첫 오프라인 팝업",
+   "kind": "popup",
+   "topic": "fashion",
+   "start": "2026-11-06",
+   "end": "2026-11-15",
+   "place": "LCDC 서울",
+   "address": "서울 성동구 연무장17길 10",
+   "time": "",
+   "fee": "",
+   "brand": "실리언 레일 (이동휘)",
+   "about": "배우 이동휘의 패션 브랜드가 데님·재킷을 처음 선보여요",
+   "gifts": [],
+   "link": "https://www.nc.press/news/articleView.html?idxno=629821",
+   "source": "manual",
+   "lat": 37.541731,
+   "lng": 127.061553,
+   "added": "2026-11-02"
   },
   {
    "id": "seoul-159920",
