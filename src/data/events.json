@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-02 09:23",
- "updated": "2026-11-02 05:15",
+ "checked": "2026-11-03 05:15",
+ "updated": "2026-11-03 05:15",
  "events": [
   {
    "id": "m-evan-gliddy-popup",
@@ -174,6 +174,26 @@
    "source": "manual",
    "nopin": true,
    "added": "2026-11-02"
+  },
+  {
+   "id": "m-champion-musinsa-megastore-popup",
+   "title": "챔피온 팝업",
+   "kind": "popup",
+   "topic": "fashion",
+   "start": "2026-10-26",
+   "end": "2026-11-08",
+   "place": "무신사 메가스토어 성수",
+   "address": "서울 성동구 성수이로 62",
+   "time": "11:00~22:00",
+   "fee": "",
+   "brand": "챔피온",
+   "about": "둘째 주(11/2~)에는 신상 아우터와 협업 컬렉션을 선보여요",
+   "gifts": [],
+   "link": "https://www.musinsa.com/content/1561967931099013703",
+   "source": "manual",
+   "lat": 37.540362,
+   "lng": 127.055858,
+   "added": "2026-11-03"
   },
   {
    "id": "m-angyeongsu-first-collection",
@@ -386,6 +406,24 @@
    "lat": 37.544935,
    "lng": 127.050525,
    "added": "2026-10-22"
+  },
+  {
+   "id": "seoul-159873",
+   "title": "[성동구립도서관] 김금희 작가와 함께하는 2026 성동구 구립도서관 하반기 북 콘서트",
+   "kind": "event",
+   "topic": "culture",
+   "start": "2026-11-19",
+   "end": "2026-11-19",
+   "place": "성수아트홀",
+   "lat": 37.545429,
+   "lng": 127.046948,
+   "time": "19:00~21:00",
+   "fee": "무료",
+   "about": "음악과 함께하는 김금희 작가 북 콘서트",
+   "gifts": [],
+   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159873&menuNo=200008",
+   "source": "seoul",
+   "added": "2026-11-03"
   },
   {
    "id": "m-nikke-musinsa-popup",
