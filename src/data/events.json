@@ -1,68 +1,7 @@
 {
- "checked": "2026-11-03 11:48",
- "updated": "2026-11-03 05:15",
+ "checked": "2026-11-04 05:16",
+ "updated": "2026-11-04 05:16",
  "events": [
-  {
-   "id": "m-evan-gliddy-popup",
-   "title": "EVAN 캐릭터 '글라이디' 팝업",
-   "kind": "popup",
-   "topic": "character",
-   "start": "2026-10-28",
-   "end": "2026-11-03",
-   "place": "카시나 성수",
-   "address": "서울 성동구 성수이로7길 41",
-   "time": "",
-   "fee": "무료 (위버스 사전 예약)",
-   "brand": "에반 (빌리프랩)",
-   "about": "캐릭터 글라이디의 첫 팝업, 굿즈 18종",
-   "gifts": [
-    {
-     "what": "글라이디 투명 포토카드",
-     "how": "구매 시 증정",
-     "note": "금액 기준은 안 알려졌어요"
-    },
-    {
-     "what": "포토이즘 부스 촬영권",
-     "how": "구매 시 증정",
-     "note": "금액 기준은 안 알려졌어요"
-    }
-   ],
-   "link": "https://www.topstarnews.net/news/articleView.html?idxno=16254703",
-   "source": "manual",
-   "reserve": true,
-   "lat": 37.542609,
-   "lng": 127.05307,
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-vitalbeauty-super-glow-sauna",
-   "title": "바이탈뷰티 '슈퍼 글로우 사우나'",
-   "kind": "popup",
-   "topic": "beauty",
-   "start": "2026-10-28",
-   "end": "2026-11-03",
-   "place": "성수동 연무장길",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "바이탈뷰티",
-   "about": "피부 고민을 확인하고 미션을 하는 체험형 공간",
-   "gifts": [
-    {
-     "what": "팝업 한정 굿즈",
-     "how": "추첨",
-     "note": "게임형 미션을 마치면 럭키드로우에 참여해요"
-    },
-    {
-     "what": "무료 스킨 체크 체험",
-     "how": "100% 증정"
-    }
-   ],
-   "link": "https://www.banronbodo.com/news/articleView.html?idxno=33274",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-11-02"
-  },
   {
    "id": "m-nylora-eql-seongsu-popup",
    "title": "나일로라 EQL 성수 팝업",
@@ -87,6 +26,24 @@
    "source": "manual",
    "nopin": true,
    "added": "2026-10-25"
+  },
+  {
+   "id": "seoul-160101",
+   "title": "[성동구청] 2026 성동 미래직업체험 & 온마을체험학습 축제",
+   "kind": "event",
+   "topic": "etc",
+   "start": "2026-11-07",
+   "end": "2026-11-07",
+   "place": "성동 AI·미래기술체험센터 & 전관원어린이공원",
+   "lat": 37.554674,
+   "lng": 127.04049,
+   "time": "13:00~17:00",
+   "fee": "참가비: 유료 (별도의 재료비가 추가될 수 있습니다.)",
+   "about": "",
+   "gifts": [],
+   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=160101&menuNo=200010",
+   "source": "seoul",
+   "added": "2026-11-04"
   },
   {
    "id": "m-coach-live-your-story",
@@ -525,6 +482,26 @@
    "lat": 37.546083,
    "lng": 127.060964,
    "added": "2026-10-31"
+  },
+  {
+   "id": "m-chanel-beauty-holiday-seongsu-2026",
+   "title": "샤넬 홀리데이 팝업",
+   "kind": "popup",
+   "topic": "beauty",
+   "start": "2026-11-21",
+   "end": "2026-12-31",
+   "place": "샤넬 뷰티 성수 팝업",
+   "address": "서울 성동구 성수이로7가길 9",
+   "time": "11:00~20:00 (마지막 입장 19:30)",
+   "fee": "",
+   "brand": "샤넬 뷰티",
+   "about": "생모리츠 겨울을 주제로 한 홀리데이 에디션 제품 공간",
+   "gifts": [],
+   "link": "https://www.marieclairekorea.com/beauty/2026/11/chanel-beauty-6/",
+   "source": "manual",
+   "lat": 37.541111,
+   "lng": 127.054825,
+   "added": "2026-11-04"
   },
   {
    "id": "m-torriden-connect-seongsu-2026",
