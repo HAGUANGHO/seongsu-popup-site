@@ -1,50 +1,7 @@
 {
- "checked": "2026-11-04 10:05",
- "updated": "2026-11-04 05:16",
+ "checked": "2026-11-05 10:21",
+ "updated": "2026-11-05 10:21",
  "events": [
-  {
-   "id": "m-nylora-eql-seongsu-popup",
-   "title": "나일로라 EQL 성수 팝업",
-   "kind": "popup",
-   "topic": "fashion",
-   "start": "2026-10-23",
-   "end": "2026-11-04",
-   "place": "EQL 성수점",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "나일로라",
-   "about": "하이엔드 라이프웨어 브랜드의 릴레이 팝업",
-   "gifts": [
-    {
-     "what": "코듀로이 캡 키링·재키 캡·트래블백",
-     "how": "구매 시 증정",
-     "note": "구매 금액별로 달라요"
-    }
-   ],
-   "link": "https://fashionbiz.co.kr/article/230528",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-10-25"
-  },
-  {
-   "id": "seoul-160101",
-   "title": "[성동구청] 2026 성동 미래직업체험 & 온마을체험학습 축제",
-   "kind": "event",
-   "topic": "etc",
-   "start": "2026-11-07",
-   "end": "2026-11-07",
-   "place": "성동 AI·미래기술체험센터 & 전관원어린이공원",
-   "lat": 37.554674,
-   "lng": 127.04049,
-   "time": "13:00~17:00",
-   "fee": "참가비: 유료 (별도의 재료비가 추가될 수 있습니다.)",
-   "about": "",
-   "gifts": [],
-   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=160101&menuNo=200010",
-   "source": "seoul",
-   "added": "2026-11-04"
-  },
   {
    "id": "m-coach-live-your-story",
    "title": "코치 'LIVE YOUR STORY' 팝업",
