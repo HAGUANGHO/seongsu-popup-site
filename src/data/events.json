@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-06 10:25",
- "updated": "2026-11-06 10:25",
+ "checked": "2026-11-07 05:15",
+ "updated": "2026-11-07 05:15",
  "events": [
   {
    "id": "seoul-160101",
@@ -57,6 +57,60 @@
    "added": "2026-10-22"
   },
   {
+   "id": "m-yeonjak-base-prep-trailer",
+   "title": "No.1 베이스 프렙 트레일러 팝업",
+   "kind": "popup",
+   "topic": "beauty",
+   "start": "2026-11-06",
+   "end": "2026-11-08",
+   "place": "뉴뉴 성수점",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "연작",
+   "about": "베이스 프렙 3종을 써 보는 체험형 팝업",
+   "gifts": [
+    {
+     "what": "퀴즈 성공 시 추첨 증정 (베이스 프렙 본품 40ml·미니어처·샘플 파우치)",
+     "how": "추첨",
+     "note": "현장 제품 키워드 퀴즈 성공자 대상"
+    },
+    {
+     "what": "SNS 팔로우·방문 사진 인증 시 타포린백과 벨벳 프렙 미니어처 10ml",
+     "how": "참여 시 증정",
+     "note": "공식 채널 팔로우 또는 사진 인증"
+    },
+    {
+     "what": "무료 제품 테스트 존·퀴즈 게임 존 체험",
+     "how": "100% 증정",
+     "note": "테스터 3종"
+    }
+   ],
+   "link": "https://seoul.co.kr/news/economy/2026/11/06/20261106500064",
+   "source": "manual",
+   "search": "뉴뉴 성수",
+   "nopin": true,
+   "added": "2026-11-07"
+  },
+  {
+   "id": "seoul-160133",
+   "title": "[성동 한장] 엽서와 라디오로 성동의 이야기를 모으는 하루",
+   "kind": "event",
+   "topic": "culture",
+   "start": "2026-11-08",
+   "end": "2026-11-08",
+   "place": "어바웃더챕터(북카페), 서울 성동구 서울숲4길 20-1 지하 1층",
+   "lat": 37.547154,
+   "lng": 127.04316,
+   "time": "13:00~18:00",
+   "fee": "무료",
+   "about": "성동 엽서 아카이빙(라디오 사연), 한 줄 이어쓰기, 나만의 책갈피 만들기",
+   "gifts": [],
+   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=160133&menuNo=200011",
+   "source": "seoul",
+   "added": "2026-11-07"
+  },
+  {
    "id": "m-riot-music-worlds-26",
    "title": "리그 오브 레전드 'Music & Worlds 26' 팝업",
    "kind": "popup",
@@ -106,6 +160,32 @@
    "source": "manual",
    "nopin": true,
    "added": "2026-11-02"
+  },
+  {
+   "id": "m-gyeongnam-jirisan-soom-station",
+   "title": "지리산 SOOM STATION",
+   "kind": "popup",
+   "topic": "etc",
+   "start": "2026-11-04",
+   "end": "2026-11-08",
+   "place": "성수동 서울숲길 일대",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "경상남도",
+   "about": "차 블렌딩·향주머니 만들기 등 지리산 힐링 체험 공간",
+   "gifts": [
+    {
+     "what": "체험 스탬프 모으면 기념품 교환권",
+     "how": "참여 시 증정",
+     "note": "스탬프 4개 이상 1매, 7개 모두 모으면 2매"
+    }
+   ],
+   "link": "https://go.seoul.co.kr/news/newsView.php?id=20261105500300",
+   "source": "manual",
+   "search": "성수동 서울숲길 지리산",
+   "nopin": true,
+   "added": "2026-11-07"
   },
   {
    "id": "m-champion-musinsa-megastore-popup",
