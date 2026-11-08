@@ -1,61 +1,7 @@
 {
- "checked": "2026-11-07 09:41",
- "updated": "2026-11-07 05:15",
+ "checked": "2026-11-08 09:15",
+ "updated": "2026-11-08 09:15",
  "events": [
-  {
-   "id": "seoul-160101",
-   "title": "[성동구청] 2026 성동 미래직업체험 & 온마을체험학습 축제",
-   "kind": "event",
-   "topic": "etc",
-   "start": "2026-11-07",
-   "end": "2026-11-07",
-   "place": "성동 AI·미래기술체험센터 & 전관원어린이공원",
-   "lat": 37.554674,
-   "lng": 127.04049,
-   "time": "13:00~17:00",
-   "fee": "참가비: 유료 (별도의 재료비가 추가될 수 있습니다.)",
-   "about": "",
-   "gifts": [],
-   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=160101&menuNo=200010",
-   "source": "seoul",
-   "added": "2026-11-04"
-  },
-  {
-   "id": "m-coach-live-your-story",
-   "title": "코치 'LIVE YOUR STORY' 팝업",
-   "kind": "popup",
-   "topic": "fashion",
-   "start": "2026-10-19",
-   "end": "2026-11-07",
-   "place": "무신사 스페이스 서울숲",
-   "address": "서울 성동구 서울숲2길 43",
-   "time": "",
-   "fee": "",
-   "brand": "코치",
-   "about": "음악과 패션을 엮은 가을 캠페인 공간",
-   "gifts": [
-    {
-     "what": "핀 배지 3종",
-     "how": "참여 시 증정",
-     "note": "무신사 스토어 회원 가입 또는 코치 브랜드숍 '좋아요'만 해도 받아요, 수량은 안 알려졌어요"
-    },
-    {
-     "what": "코치 솜사탕",
-     "how": "참여 시 증정",
-     "note": "스탬프 3종을 모두 모으면, 수량은 안 알려졌어요"
-    },
-    {
-     "what": "이니셜 새김 행택",
-     "how": "구매 시 증정",
-     "note": "제품 산 사람"
-    }
-   ],
-   "link": "http://www.ktnews.com/news/articleView.html?idxno=149563",
-   "source": "manual",
-   "lat": 37.54647,
-   "lng": 127.043465,
-   "added": "2026-10-22"
-  },
   {
    "id": "m-yeonjak-base-prep-trailer",
    "title": "No.1 베이스 프렙 트레일러 팝업",
