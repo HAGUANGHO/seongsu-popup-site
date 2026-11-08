@@ -1,158 +1,7 @@
 {
- "checked": "2026-11-08 09:15",
- "updated": "2026-11-08 09:15",
+ "checked": "2026-11-09 05:14",
+ "updated": "2026-11-09 05:14",
  "events": [
-  {
-   "id": "m-yeonjak-base-prep-trailer",
-   "title": "No.1 베이스 프렙 트레일러 팝업",
-   "kind": "popup",
-   "topic": "beauty",
-   "start": "2026-11-06",
-   "end": "2026-11-08",
-   "place": "뉴뉴 성수점",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "연작",
-   "about": "베이스 프렙 3종을 써 보는 체험형 팝업",
-   "gifts": [
-    {
-     "what": "퀴즈 성공 시 추첨 증정 (베이스 프렙 본품 40ml·미니어처·샘플 파우치)",
-     "how": "추첨",
-     "note": "현장 제품 키워드 퀴즈 성공자 대상"
-    },
-    {
-     "what": "SNS 팔로우·방문 사진 인증 시 타포린백과 벨벳 프렙 미니어처 10ml",
-     "how": "참여 시 증정",
-     "note": "공식 채널 팔로우 또는 사진 인증"
-    },
-    {
-     "what": "무료 제품 테스트 존·퀴즈 게임 존 체험",
-     "how": "100% 증정",
-     "note": "테스터 3종"
-    }
-   ],
-   "link": "https://seoul.co.kr/news/economy/2026/11/06/20261106500064",
-   "source": "manual",
-   "search": "뉴뉴 성수",
-   "nopin": true,
-   "added": "2026-11-07"
-  },
-  {
-   "id": "seoul-160133",
-   "title": "[성동 한장] 엽서와 라디오로 성동의 이야기를 모으는 하루",
-   "kind": "event",
-   "topic": "culture",
-   "start": "2026-11-08",
-   "end": "2026-11-08",
-   "place": "어바웃더챕터(북카페), 서울 성동구 서울숲4길 20-1 지하 1층",
-   "lat": 37.547154,
-   "lng": 127.04316,
-   "time": "13:00~18:00",
-   "fee": "무료",
-   "about": "성동 엽서 아카이빙(라디오 사연), 한 줄 이어쓰기, 나만의 책갈피 만들기",
-   "gifts": [],
-   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=160133&menuNo=200011",
-   "source": "seoul",
-   "added": "2026-11-07"
-  },
-  {
-   "id": "m-riot-music-worlds-26",
-   "title": "리그 오브 레전드 'Music & Worlds 26' 팝업",
-   "kind": "popup",
-   "topic": "character",
-   "start": "2026-10-29",
-   "end": "2026-11-08",
-   "place": "트렌드팟 바이 올리브영N 성수",
-   "address": "서울 성동구 연무장7길 13",
-   "time": "",
-   "fee": "",
-   "brand": "라이엇 게임즈",
-   "about": "LoL 음악과 월드 챔피언십 체험 공간",
-   "gifts": [
-    {
-     "what": "럭키드로우 경품",
-     "how": "뽑기",
-     "note": "조건은 나중에 공개"
-    }
-   ],
-   "link": "https://www.invenglobal.com/articles/27282/riot-games-to-hold-lol-music-worlds-pop-up-in-jamsil-and-seongsu-starting-oct-23",
-   "source": "manual",
-   "lat": 37.544183,
-   "lng": 127.054483,
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-ali-gacha-sson-da-seongsu",
-   "title": "알리가차쏜다 팝업",
-   "kind": "popup",
-   "topic": "tech",
-   "start": "2026-11-05",
-   "end": "2026-11-08",
-   "place": "성수동 일대 (정확한 장소는 아직 안 알려졌어요)",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "알리익스프레스",
-   "about": "가챠머신 모양 공간에서 전기차 전시와 11초 상품 담기 도전",
-   "gifts": [
-    {
-     "what": "11초 챌린지 성공 시 실물 경품",
-     "how": "참여 시 증정",
-     "note": "전시존 미션을 마치면 도전할 수 있어요. 경품 종류는 안 알려졌어요"
-    }
-   ],
-   "link": "https://www.newsis.com/view/ALSX20261029_0000008016",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-11-02"
-  },
-  {
-   "id": "m-gyeongnam-jirisan-soom-station",
-   "title": "지리산 SOOM STATION",
-   "kind": "popup",
-   "topic": "etc",
-   "start": "2026-11-04",
-   "end": "2026-11-08",
-   "place": "성수동 서울숲길 일대",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "경상남도",
-   "about": "차 블렌딩·향주머니 만들기 등 지리산 힐링 체험 공간",
-   "gifts": [
-    {
-     "what": "체험 스탬프 모으면 기념품 교환권",
-     "how": "참여 시 증정",
-     "note": "스탬프 4개 이상 1매, 7개 모두 모으면 2매"
-    }
-   ],
-   "link": "https://go.seoul.co.kr/news/newsView.php?id=20261105500300",
-   "source": "manual",
-   "search": "성수동 서울숲길 지리산",
-   "nopin": true,
-   "added": "2026-11-07"
-  },
-  {
-   "id": "m-champion-musinsa-megastore-popup",
-   "title": "챔피온 팝업",
-   "kind": "popup",
-   "topic": "fashion",
-   "start": "2026-10-26",
-   "end": "2026-11-08",
-   "place": "무신사 메가스토어 성수",
-   "address": "서울 성동구 성수이로 62",
-   "time": "11:00~22:00",
-   "fee": "",
-   "brand": "챔피온",
-   "about": "둘째 주(11/2~)에는 신상 아우터와 협업 컬렉션을 선보여요",
-   "gifts": [],
-   "link": "https://www.musinsa.com/content/1561967931099013703",
-   "source": "manual",
-   "lat": 37.540362,
-   "lng": 127.055858,
-   "added": "2026-11-03"
-  },
   {
    "id": "m-angyeongsu-first-collection",
    "title": "안경:수 첫 컬렉션 팝업",
@@ -222,6 +71,26 @@
    "lat": 37.541228,
    "lng": 127.058847,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-liquid-matrix-s-factory",
+   "title": "리퀴드 매트릭스: 녹아내리는 경계",
+   "kind": "exhibit",
+   "topic": "culture",
+   "start": "2026-11-02",
+   "end": "2026-11-10",
+   "place": "에스팩토리 워시",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "한국국제교류재단·부천국제판타스틱영화제",
+   "about": "손동작으로 가상 세계를 나는 한·프·대만 VR·AI 작품전",
+   "gifts": [],
+   "link": "https://www.koreancenter.or.kr/news/articleView.html?idxno=1432831",
+   "source": "manual",
+   "search": "에스팩토리",
+   "nopin": true,
+   "added": "2026-11-09"
   },
   {
    "id": "seoul-159882",
@@ -456,6 +325,26 @@
    "lat": 37.542493,
    "lng": 127.054305,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-popcorn-d-square-seongsu-tcg",
+   "title": "팝콘D스퀘어 성수점 TCG 팝업",
+   "kind": "popup",
+   "topic": "character",
+   "start": "2026-11-12",
+   "end": "2026-12-12",
+   "place": "팝콘D스퀘어 성수점 5층",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "대원미디어",
+   "about": "포켓몬·원피스·유희왕 카드 상품을 모은 팝업",
+   "gifts": [],
+   "link": "https://www.gamemeca.com/en/view.php?gid=1782930",
+   "source": "manual",
+   "search": "팝콘D스퀘어 성수",
+   "nopin": true,
+   "added": "2026-11-09"
   },
   {
    "id": "m-lovelive-15th-seoul-exhibition",
