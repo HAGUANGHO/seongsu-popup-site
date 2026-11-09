@@ -1,57 +1,7 @@
 {
- "checked": "2026-11-09 09:37",
- "updated": "2026-11-09 05:14",
+ "checked": "2026-11-10 05:15",
+ "updated": "2026-11-10 05:15",
  "events": [
-  {
-   "id": "m-angyeongsu-first-collection",
-   "title": "안경:수 첫 컬렉션 팝업",
-   "kind": "popup",
-   "topic": "fashion",
-   "start": "2026-11-05",
-   "end": "2026-11-09",
-   "place": "무신사 엠프티 성수 인근",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "안경:수",
-   "about": "안경 브랜드의 첫 컬렉션 공개",
-   "gifts": [],
-   "link": "https://www.nc.press/news/articleView.html?idxno=629821",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-11-02"
-  },
-  {
-   "id": "m-fra422-lcdc-soul-award",
-   "title": "프라포투투 'SOUL AWARD' 향수 팝업",
-   "kind": "popup",
-   "topic": "beauty",
-   "start": "2026-09-02",
-   "end": "2026-11-09",
-   "place": "LCDC SEOUL 1층",
-   "address": "서울 성동구 연무장17길 10",
-   "time": "11:00–20:00",
-   "fee": "",
-   "brand": "프라포투투",
-   "about": "나만의 향을 완성해 보는 향수 팝업",
-   "gifts": [
-    {
-     "what": "15ml 향수",
-     "how": "참여 시 증정",
-     "note": "'SOUL AWARD'로 나만의 SOUL을 완성하면"
-    },
-    {
-     "what": "리유저블 백",
-     "how": "구매 시 증정",
-     "note": "구매 고객 전원"
-    }
-   ],
-   "link": "https://www.instagram.com/p/DdiamidE1to/",
-   "source": "manual",
-   "lat": 37.541731,
-   "lng": 127.061553,
-   "added": "2026-10-23"
-  },
   {
    "id": "m-romand-10th-dear-bestie-party",
    "title": "디어 베스티 파티 (롬앤 10주년 팝업)",
@@ -233,6 +183,26 @@
    "lat": 37.544935,
    "lng": 127.050525,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-nct-dream-welcome-dreamers",
+   "title": "WELCOME, DREAMERS (엔시티 드림 정규 6집 팝업)",
+   "kind": "popup",
+   "topic": "character",
+   "start": "2026-11-08",
+   "end": "2026-11-16",
+   "place": "연무장7길 16",
+   "address": "서울 성동구 연무장7길 16",
+   "time": "12:00~20:00",
+   "fee": "",
+   "brand": "엔시티 드림",
+   "about": "정규 6집 발매 기념 앨범·MD 공간",
+   "gifts": [],
+   "link": "https://www.pap-magazine.com/article/nct-dream-welcome-dreamers-popup-seongsu",
+   "source": "manual",
+   "lat": 37.543973,
+   "lng": 127.055124,
+   "added": "2026-11-10"
   },
   {
    "id": "seoul-159873",
