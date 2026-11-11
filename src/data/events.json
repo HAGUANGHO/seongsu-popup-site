@@ -1,25 +1,7 @@
 {
- "checked": "2026-11-11 21:58",
- "updated": "2026-11-11 10:05",
+ "checked": "2026-11-12 05:15",
+ "updated": "2026-11-12 05:15",
  "events": [
-  {
-   "id": "seoul-159882",
-   "title": "[성동문화재단] 세계 영화 상영회 9회차 '이탈리아 영화' [비발디와 나]",
-   "kind": "event",
-   "topic": "culture",
-   "start": "2026-11-11",
-   "end": "2026-11-11",
-   "place": "성수아트홀",
-   "lat": 37.545429,
-   "lng": 127.046948,
-   "time": "19:00",
-   "fee": "무료",
-   "about": "성동문화재단x주한 이탈리아 문화원 협력으로 영화 '비발디와 나' 상영 및 클래식 공연 진행",
-   "gifts": [],
-   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159882&menuNo=200013",
-   "source": "seoul",
-   "added": "2026-10-22"
-  },
   {
    "id": "m-rejuvie-doremi-seongsu",
    "title": "리쥬비 도레미약국 성수점 단독 팝업",
@@ -143,6 +125,41 @@
    "lat": 37.544935,
    "lng": 127.050525,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-remarried-empress-disney-popup",
+   "title": "재혼 황후 '동대제국으로의 초대' 팝업",
+   "kind": "popup",
+   "topic": "character",
+   "start": "2026-11-03",
+   "end": "2026-11-15",
+   "place": "재혼 황후 동대제국으로의 초대 팝업 (성수역 인근)",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "디즈니+ 재혼 황후",
+   "about": "드라마 속 황실 방을 꾸민 체험 공간",
+   "gifts": [
+    {
+     "what": "네이버웹툰 쿠키",
+     "how": "100% 증정",
+     "note": "방문객 전원"
+    },
+    {
+     "what": "황실 이름 만들기 체험·귀빈 명찰",
+     "how": "참여 시 증정",
+     "note": "1층 키오스크"
+    },
+    {
+     "what": "새장 메모 인증 경품",
+     "how": "추첨",
+     "note": "메모를 새장에 넣고 인증 사진을 올리면 추첨"
+    }
+   ],
+   "link": "https://www.topstarnews.net/news/articleView.html?idxno=16267973",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-11-12"
   },
   {
    "id": "m-nct-dream-welcome-dreamers",
