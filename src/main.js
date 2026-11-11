@@ -1,5 +1,6 @@
 import { STARTS, orderStops, nearest, walkKm, walkMin } from './route.js';
 import { loadGraph, walkTable } from './walk.js';
+import { enhanceSelect } from './select.js';
 
 const KINDS = {
   popup: { label: '팝업', color: 'var(--popup)' },
@@ -143,7 +144,7 @@ function setupMap() {
   window.__map = map;
 }
 
-// ---------- 고른 점 강조 (국토종주와 같은 기준, 사용자 요청) ----------
+// ---------- 고른 점 강조 (사용자 요청) ----------
 // 말풍선이 열리면 지도 전체를 반투명 어두운 막(dimPane)으로 덮고, 고른 점만 막 위(focusPane)에 크게 다시 그린다.
 // 층 순서: 점(오버레이 400) < 어두운 막(450) < 고른 점(620) < 말풍선(700)
 // PC(마우스)는 올리기만 해도 열고(지도는 옮기지 않음), 점과 말풍선 밖으로 나가면 닫는다.
@@ -282,7 +283,7 @@ function popupContent(ev) {
       ev.approx && el('p', { class: 'muted' }, '대략 위치예요(길 위치로 찍었어요).')),
     el('div', { class: 'pop-actions' },
       planButton(ev),
-      link && el('a', { href: link, target: '_blank', rel: 'noopener' }, '공식 안내 ↗')));
+      link && el('a', { class: 'btn small ghost', href: link, target: '_blank', rel: 'noopener' }, '공식 안내 ↗')));
 }
 
 function drawMarkers(list) {
@@ -624,6 +625,7 @@ async function main() {
   const select = document.getElementById('start-select');
   select.replaceChildren(...STARTS.map((s) => el('option', { value: s.id, selected: s.id === state.start }, s.name)));
   select.addEventListener('change', () => { state.start = select.value; save('seongsu.start', state.start); renderPlan(); });
+  enhanceSelect(select);
   document.getElementById('suggest').addEventListener('click', suggest);
   document.getElementById('clear-plan').addEventListener('click', () => {
     state.plan = []; save('seongsu.plan', []); renderList(); renderPlan();

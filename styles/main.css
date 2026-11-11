@@ -58,11 +58,13 @@ body {
 }
 a { color: var(--accent); }
 button { font: inherit; color: inherit; }
+/* 키보드로 옮겨 다닐 때만 테두리를 보인다 (브라우저 기본 검은 테두리 대신) */
+:where(button, a, [tabindex]):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 [hidden] { display: none !important; }
 
 #map { position: fixed; inset: 0; z-index: 0; background: var(--bg-soft); }
 #map .leaflet-tile-pane { filter: var(--map-filter); opacity: var(--map-opacity); }
-/* 고른 것 강조: 지도 전체를 덮는 어두운 막. 지도를 따라 움직이는 층이라 넉넉히 크게 깐다 (국토종주와 같은 기준) */
+/* 고른 것 강조: 지도 전체를 덮는 어두운 막. 지도를 따라 움직이는 층이라 넉넉히 크게 깐다 */
 .map-dim {
   position: absolute; top: -100000px; left: -100000px; width: 200000px; height: 200000px;
   background: var(--map-dim); opacity: 0; transition: opacity .15s;
@@ -87,6 +89,18 @@ button { font: inherit; color: inherit; }
 .sheet-head h1 { margin: 0; font-size: 21px; letter-spacing: -.02em; }
 .updated { margin: 2px 0 10px; font-size: 13px; color: var(--muted); }
 .sheet-body { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 14px 18px 18px; }
+/* 스크롤바도 기본 회색 막대 대신 가늘고 둥글게 */
+.sheet-body::-webkit-scrollbar, .select-list::-webkit-scrollbar { width: 12px; }
+.sheet-body::-webkit-scrollbar-track, .select-list::-webkit-scrollbar-track { margin: 8px 0; background: transparent; }
+.sheet-body::-webkit-scrollbar-thumb, .select-list::-webkit-scrollbar-thumb {
+  border: 4px solid transparent; border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 35%, transparent) padding-box;
+}
+.sheet-body::-webkit-scrollbar-thumb:hover { background-color: color-mix(in srgb, var(--muted) 60%, transparent); }
+.sheet-body::-webkit-scrollbar-button, .select-list::-webkit-scrollbar-button { display: none; }
+@supports not selector(::-webkit-scrollbar) {
+  .sheet-body, .select-list { scrollbar-width: thin; scrollbar-color: color-mix(in srgb, var(--muted) 35%, transparent) transparent; }
+}
 
 .tabs { display: flex; gap: 4px; }
 .tabs button {
@@ -158,23 +172,60 @@ button { font: inherit; color: inherit; }
 
 /* ---------- 버튼 ---------- */
 
+/* 버튼과 버튼 모양 링크는 같은 줄에서 높이가 같다 (a와 button의 기본 줄 높이 차이를 없앤다) */
 .btn {
-  padding: 8px 14px; border: 1px solid var(--line); border-radius: 10px;
+  display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+  padding: 8px 14px; border: 1px solid var(--line); border-radius: 10px; line-height: 1.3;
   background: var(--bg); cursor: pointer; font-weight: 600; text-decoration: none; color: var(--text);
 }
+.btn:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
 .btn.small { padding: 5px 10px; font-size: 13px; border-radius: 8px; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
 .btn.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
-.btn.ghost { border-color: transparent; color: var(--accent); }
-.icon-btn { border: 0; background: none; cursor: pointer; color: var(--muted); padding: 8px; font-size: 14px; }
+/* 글자만 있는 버튼은 쓰지 않는다 (버튼인지 모른다) — 보조 버튼도 테두리 있는 둥근 모양 */
+.btn.ghost { color: var(--accent); }
+.icon-btn {
+  flex: none; display: inline-grid; place-items: center; width: 32px; height: 32px; margin-right: 8px;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--bg);
+  cursor: pointer; color: var(--muted); font-size: 13px; line-height: 1;
+}
+.icon-btn:hover { color: var(--ending); border-color: var(--ending); }
 
 /* ---------- 동선 ---------- */
 
 .field { display: flex; align-items: center; gap: 10px; font-weight: 600; margin-bottom: 10px; }
-.field select {
-  flex: 1; padding: 8px 10px; border: 1px solid var(--line); border-radius: 10px;
-  background: var(--bg); color: var(--text); font: inherit;
+.field .select { flex: 1; }
+
+/* 직접 만든 선택 상자 (src/select.js). 브라우저 기본 선택 상자는 쓰지 않는다 */
+.select-native {
+  position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden;
+  clip-path: inset(50%); opacity: 0; pointer-events: none;
 }
+.select { position: relative; }
+.select-button {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;
+  padding: 9px 12px; border: 1.5px solid var(--line); border-radius: 10px;
+  background: var(--bg); color: var(--text); font-weight: 600; text-align: left; cursor: pointer; line-height: 1.3;
+}
+.select-button:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.select-button:focus-visible, .select.open .select-button { border-color: var(--accent); outline: none; }
+.select-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.select-chevron { flex: none; color: var(--muted); transition: transform .15s; }
+.select.open .select-chevron { transform: rotate(180deg); }
+.select-list {
+  position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30;
+  max-height: 260px; margin: 0; padding: 6px; overflow-y: auto; overscroll-behavior: contain;
+  border-radius: 10px; background: var(--bg); box-shadow: 0 0 0 1px var(--line), var(--shadow);
+  list-style: none; font-weight: 500;
+}
+.select-list[hidden] { display: none; }
+.select-list li {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  padding: 9px 10px; border-radius: 8px; color: var(--text); font-size: 14px; cursor: pointer;
+}
+.select-list li.active { background: var(--bg-soft); }
+.select-list li.selected { color: var(--accent); font-weight: 700; }
+.select-check { flex: none; }
 .plan-actions { display: flex; gap: 8px; margin-bottom: 10px; }
 .plan-summary { font-size: 14px; font-weight: 600; margin: 4px 0 10px; }
 .hint { color: var(--muted); font-size: 14px; }
