@@ -1,26 +1,7 @@
 {
- "checked": "2026-11-12 11:09",
- "updated": "2026-11-12 05:15",
+ "checked": "2026-11-13 05:15",
+ "updated": "2026-11-13 05:15",
  "events": [
-  {
-   "id": "m-rejuvie-doremi-seongsu",
-   "title": "리쥬비 도레미약국 성수점 단독 팝업",
-   "kind": "popup",
-   "topic": "beauty",
-   "start": "2026-10-30",
-   "end": "2026-11-12",
-   "place": "도레미약국 성수점",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "파마리서치메디케어 리쥬비",
-   "about": "약국 안에서 만나는 리쥬비 브랜드 체험 공간",
-   "gifts": [],
-   "link": "https://www.cosmorning.com/news/article.html?no=53829",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-10-31"
-  },
   {
    "id": "m-spotify-speakeasy-hyukoh",
    "title": "Spotify SPEAKEASY with 혁오",
@@ -160,6 +141,36 @@
    "source": "manual",
    "nopin": true,
    "added": "2026-11-12"
+  },
+  {
+   "id": "m-hongkong-express-seongsu-popup",
+   "title": "홍콩 갈 땐? 홍콩익스프레스항공 팝업",
+   "kind": "popup",
+   "topic": "etc",
+   "start": "2026-11-12",
+   "end": "2026-11-15",
+   "place": "언더스탠드에비뉴",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "홍콩익스프레스",
+   "about": "홍콩 거리를 꾸민 여행 성향 테스트·체험 공간",
+   "gifts": [
+    {
+     "what": "홍콩식 밀크티 시음",
+     "how": "참여 시 증정",
+     "note": "기사에 수량·조건은 안 나왔어요"
+    },
+    {
+     "what": "참여 기관 기념품",
+     "how": "참여 시 증정",
+     "note": "홍콩관광청·마카오정부관광청·클룩 제공, 조건은 안 알려졌어요"
+    }
+   ],
+   "link": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72667",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-11-13"
   },
   {
    "id": "m-nct-dream-welcome-dreamers",
