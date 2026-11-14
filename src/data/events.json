@@ -1,28 +1,7 @@
 {
- "checked": "2026-11-14 10:20",
- "updated": "2026-11-13 05:15",
+ "checked": "2026-11-15 05:13",
+ "updated": "2026-11-15 05:13",
  "events": [
-  {
-   "id": "m-spotify-speakeasy-hyukoh",
-   "title": "Spotify SPEAKEASY with 혁오",
-   "kind": "event",
-   "topic": "etc",
-   "start": "2026-11-14",
-   "end": "2026-11-14",
-   "place": "에스팩토리",
-   "address": "서울 성동구 연무장15길 11",
-   "time": "",
-   "fee": "스포티파이 프리미엄 이용자 약 500명 선정 초대",
-   "brand": "스포티파이",
-   "about": "혁오 라이브 6곡과 토크, 플레이리스트 체험존",
-   "gifts": [],
-   "link": "https://sports.khan.co.kr/article/202610240203003",
-   "source": "manual",
-   "reserve": true,
-   "lat": 37.542419,
-   "lng": 127.059111,
-   "added": "2026-10-31"
-  },
   {
    "id": "m-dragonball-heroes-rise-seoul",
    "title": "드래곤볼 히어로즈 라이즈 아시아 투어 서울",
