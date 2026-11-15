@@ -1,156 +1,7 @@
 {
- "checked": "2026-11-15 09:50",
- "updated": "2026-11-15 05:13",
+ "checked": "2026-11-16 05:13",
+ "updated": "2026-11-16 05:13",
  "events": [
-  {
-   "id": "m-dragonball-heroes-rise-seoul",
-   "title": "드래곤볼 히어로즈 라이즈 아시아 투어 서울",
-   "kind": "exhibit",
-   "topic": "character",
-   "start": "2026-08-22",
-   "end": "2026-11-15",
-   "place": "스테이지 엑스 성수 403",
-   "address": "서울 성동구 뚝섬로 403",
-   "time": "",
-   "fee": "",
-   "brand": "닷밀·인큐베이스 스튜디오",
-   "about": "드래곤볼을 모으며 도는 체험형 전시",
-   "gifts": [],
-   "link": "https://economist.co.kr/article/view/ecn202608210013",
-   "source": "manual",
-   "lat": 37.538849,
-   "lng": 127.055578,
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-silian-rail-lcdc-popup",
-   "title": "실리언 레일 첫 오프라인 팝업",
-   "kind": "popup",
-   "topic": "fashion",
-   "start": "2026-11-06",
-   "end": "2026-11-15",
-   "place": "LCDC 서울",
-   "address": "서울 성동구 연무장17길 10",
-   "time": "",
-   "fee": "",
-   "brand": "실리언 레일 (이동휘)",
-   "about": "배우 이동휘의 패션 브랜드가 데님·재킷을 처음 선보여요",
-   "gifts": [],
-   "link": "https://www.nc.press/news/articleView.html?idxno=629821",
-   "source": "manual",
-   "lat": 37.541731,
-   "lng": 127.061553,
-   "added": "2026-11-02"
-  },
-  {
-   "id": "seoul-159920",
-   "title": "연극 [점프x컷]",
-   "kind": "event",
-   "topic": "culture",
-   "start": "2026-11-07",
-   "end": "2026-11-15",
-   "place": "우란문화재단 우란2경",
-   "lat": 37.54379,
-   "lng": 127.054417,
-   "time": "평일 19:30 / 토 15:00, 19:00 / 일 14:00, 18:00 ※11.15(일)은 14:00 1회 공연만 진행",
-   "fee": "무료",
-   "about": "",
-   "gifts": [],
-   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159920&menuNo=200008",
-   "source": "seoul",
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-skt-emotion-lab",
-   "title": "이모션 랩 (T 팩토리 체험 전시)",
-   "kind": "exhibit",
-   "topic": "tech",
-   "start": "2026-09-19",
-   "end": "2026-11-15",
-   "place": "T 팩토리 성수",
-   "address": "서울 성동구 연무장1길 7-1",
-   "time": "",
-   "fee": "1층 무료 · 지하 1층 2만원 (SKT 고객 20% 할인)",
-   "brand": "SK텔레콤",
-   "about": "내 감정을 향과 색으로 만들어 보는 체험 전시",
-   "gifts": [
-    {
-     "what": "하트 모양 향 펜던트·석고 굿즈",
-     "how": "선착순",
-     "note": "SNS 인증 이벤트, 1,000명"
-    }
-   ],
-   "link": "https://news.sktelecom.com/230994",
-   "source": "manual",
-   "lat": 37.544935,
-   "lng": 127.050525,
-   "added": "2026-10-22"
-  },
-  {
-   "id": "m-remarried-empress-disney-popup",
-   "title": "재혼 황후 '동대제국으로의 초대' 팝업",
-   "kind": "popup",
-   "topic": "character",
-   "start": "2026-11-03",
-   "end": "2026-11-15",
-   "place": "재혼 황후 동대제국으로의 초대 팝업 (성수역 인근)",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "디즈니+ 재혼 황후",
-   "about": "드라마 속 황실 방을 꾸민 체험 공간",
-   "gifts": [
-    {
-     "what": "네이버웹툰 쿠키",
-     "how": "100% 증정",
-     "note": "방문객 전원"
-    },
-    {
-     "what": "황실 이름 만들기 체험·귀빈 명찰",
-     "how": "참여 시 증정",
-     "note": "1층 키오스크"
-    },
-    {
-     "what": "새장 메모 인증 경품",
-     "how": "추첨",
-     "note": "메모를 새장에 넣고 인증 사진을 올리면 추첨"
-    }
-   ],
-   "link": "https://www.topstarnews.net/news/articleView.html?idxno=16267973",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-11-12"
-  },
-  {
-   "id": "m-hongkong-express-seongsu-popup",
-   "title": "홍콩 갈 땐? 홍콩익스프레스항공 팝업",
-   "kind": "popup",
-   "topic": "etc",
-   "start": "2026-11-12",
-   "end": "2026-11-15",
-   "place": "언더스탠드에비뉴",
-   "address": "",
-   "time": "",
-   "fee": "",
-   "brand": "홍콩익스프레스",
-   "about": "홍콩 거리를 꾸민 여행 성향 테스트·체험 공간",
-   "gifts": [
-    {
-     "what": "홍콩식 밀크티 시음",
-     "how": "참여 시 증정",
-     "note": "기사에 수량·조건은 안 나왔어요"
-    },
-    {
-     "what": "참여 기관 기념품",
-     "how": "참여 시 증정",
-     "note": "홍콩관광청·마카오정부관광청·클룩 제공, 조건은 안 알려졌어요"
-    }
-   ],
-   "link": "https://www.traveldaily.co.kr/news/articleView.html?idxno=72667",
-   "source": "manual",
-   "nopin": true,
-   "added": "2026-11-13"
-  },
   {
    "id": "m-nct-dream-welcome-dreamers",
    "title": "WELCOME, DREAMERS (엔시티 드림 정규 6집 팝업)",
@@ -215,6 +66,37 @@
    "lat": 37.541509,
    "lng": 127.056362,
    "added": "2026-10-29"
+  },
+  {
+   "id": "m-mama-awards-2026-oliveyoung-n-seongsu",
+   "title": "2026 MAMA AWARDS 공식 팝업 (올리브영 N성수)",
+   "kind": "popup",
+   "topic": "character",
+   "start": "2026-11-14",
+   "end": "2026-11-23",
+   "place": "올리브영 N성수 2층",
+   "address": "서울 성동구 연무장7길 13",
+   "time": "",
+   "fee": "",
+   "brand": "CJ ENM MAMA AWARDS",
+   "about": "역대·올해 굿즈를 전시하는 시상식 공식 팝업",
+   "gifts": [
+    {
+     "what": "레드카펫 초대권 스크래치 복권",
+     "how": "참여 시 증정",
+     "note": "구매가 필요한지는 기사에 안 나왔어요"
+    },
+    {
+     "what": "특별 선물 패키지",
+     "how": "구매 시 증정",
+     "note": "10만원 이상 구매 고객 선착순, 성수 지점 적용 여부는 기사에 안 나왔어요"
+    }
+   ],
+   "link": "https://www.sportsworldi.com/newsView/20261115502293",
+   "source": "manual",
+   "lat": 37.544183,
+   "lng": 127.054483,
+   "added": "2026-11-16"
   },
   {
    "id": "m-cardcaptor-sakura-tea-party",
