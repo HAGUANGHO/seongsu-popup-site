@@ -1,52 +1,7 @@
 {
- "checked": "2026-11-19 11:20",
- "updated": "2026-11-18 05:15",
+ "checked": "2026-11-20 11:04",
+ "updated": "2026-11-20 11:04",
  "events": [
-  {
-   "id": "seoul-159873",
-   "title": "[성동구립도서관] 김금희 작가와 함께하는 2026 성동구 구립도서관 하반기 북 콘서트",
-   "kind": "event",
-   "topic": "culture",
-   "start": "2026-11-19",
-   "end": "2026-11-19",
-   "place": "성수아트홀",
-   "lat": 37.545429,
-   "lng": 127.046948,
-   "time": "19:00~21:00",
-   "fee": "무료",
-   "about": "음악과 함께하는 김금희 작가 북 콘서트",
-   "gifts": [],
-   "link": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=159873&menuNo=200008",
-   "source": "seoul",
-   "added": "2026-11-03"
-  },
-  {
-   "id": "m-nikke-musinsa-popup",
-   "title": "니케 × 무신사 팝업스토어",
-   "kind": "popup",
-   "topic": "character",
-   "start": "2026-11-06",
-   "end": "2026-11-19",
-   "place": "무신사 스토어 성수",
-   "address": "서울 성동구 성수이로 74",
-   "time": "11:00~22:00",
-   "fee": "",
-   "brand": "니케 × 무신사",
-   "about": "게임 니케와 무신사가 함께 여는 협업 팝업",
-   "gifts": [
-    {
-     "what": "입장 티켓 + 조각 스티커 세트",
-     "how": "선착순",
-     "note": "수량이 떨어지면 일찍 끝날 수 있어요"
-    }
-   ],
-   "link": "https://inven.co.kr/webzine/news/?news=322608",
-   "source": "manual",
-   "reserve": true,
-   "lat": 37.541509,
-   "lng": 127.056362,
-   "added": "2026-10-29"
-  },
   {
    "id": "m-tcl-seongsu-experience-popup",
    "title": "TCL 체험형 팝업",
