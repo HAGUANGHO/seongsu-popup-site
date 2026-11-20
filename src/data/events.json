@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-20 11:04",
- "updated": "2026-11-20 11:04",
+ "checked": "2026-11-21 05:14",
+ "updated": "2026-11-21 05:14",
  "events": [
   {
    "id": "m-tcl-seongsu-experience-popup",
@@ -364,6 +364,37 @@
    "source": "manual",
    "nopin": true,
    "added": "2026-10-22"
+  },
+  {
+   "id": "m-thenorthface-musinsa-megastore-seongsu",
+   "title": "노스페이스 무신사 메가스토어 성수 숍인숍",
+   "kind": "popup",
+   "topic": "fashion",
+   "start": "2026-11-01",
+   "end": "2027-01-31",
+   "place": "무신사 메가스토어 성수 노스페이스 숍인숍",
+   "address": "서울 성동구 성수이로 62",
+   "time": "",
+   "fee": "",
+   "brand": "노스페이스",
+   "about": "무신사 메가스토어 안에 연 노스페이스 겨울 숍인숍",
+   "gifts": [
+    {
+     "what": "미니 파우치",
+     "how": "참여 시 증정",
+     "note": "노스페이스 공식 인스타 팔로우 후 지정 해시태그로 방문 인증 게시물을 올리면 받아요, 구매 없이 가능, 수량 한정(해시태그는 추후 공지)"
+    },
+    {
+     "what": "양말·스토리지백·곰인형",
+     "how": "구매 시 증정",
+     "note": "30만원 이상 양말, 40만원 이상 스토리지백, 50만원 이상 화이트라벨 곰인형, 소진 시 종료"
+    }
+   ],
+   "link": "https://www.musinsa.com/content/1561965220728522166",
+   "source": "manual",
+   "lat": 37.540362,
+   "lng": 127.055858,
+   "added": "2026-11-21"
   },
   {
    "id": "m-ongredients-strawberry-house-2026",
