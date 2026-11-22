@@ -1,79 +1,7 @@
 {
- "checked": "2026-11-22 10:00",
- "updated": "2026-11-21 05:14",
+ "checked": "2026-11-23 05:13",
+ "updated": "2026-11-23 05:13",
  "events": [
-  {
-   "id": "m-tcl-seongsu-experience-popup",
-   "title": "TCL 체험형 팝업",
-   "kind": "popup",
-   "topic": "tech",
-   "start": "2026-11-20",
-   "end": "2026-11-22",
-   "place": "Y173",
-   "address": "서울 성동구 연무장17길 3",
-   "time": "11:00~19:00",
-   "fee": "무료",
-   "brand": "TCL",
-   "about": "게이밍 모니터·TV 체험존과 팬 방문 행사",
-   "gifts": [
-    {
-     "what": "레이싱 게임 콘테스트 일일 최고 기록자 모니터",
-     "how": "추첨",
-     "note": "1층 게이밍 존, 매일 최고 기록자 대상"
-    },
-    {
-     "what": "럭키드로우 TCL 굿즈",
-     "how": "뽑기",
-     "note": "참여 조건은 기사에 안 나왔어요"
-    },
-    {
-     "what": "스탬프 투어 참여",
-     "how": "참여 시 증정",
-     "note": "보상은 기사에 안 나왔어요"
-    }
-   ],
-   "link": "http://digitalchosun.dizzo.com/site/data/html_dir/2026/11/13/2026111380014.html",
-   "source": "manual",
-   "lat": 37.541192,
-   "lng": 127.060727,
-   "added": "2026-11-17"
-  },
-  {
-   "id": "m-wildrift-kda-seongsu-2026",
-   "title": "와일드 리프트 K/DA 팝업",
-   "kind": "popup",
-   "topic": "character",
-   "start": "2026-11-21",
-   "end": "2026-11-22",
-   "place": "에스팩토리",
-   "address": "서울 성동구 연무장15길 11",
-   "time": "",
-   "fee": "무료",
-   "brand": "라이엇게임즈 와일드 리프트",
-   "about": "K/DA 콘셉트 미니게임·스타일링·배틀 체험 공간",
-   "gifts": [
-    {
-     "what": "스탬프 미션 완료 기념 스트링백·핀 배지",
-     "how": "참여 시 증정",
-     "note": "수량은 기사에 안 나왔어요"
-    },
-    {
-     "what": "설문 참여 아칼리 포토카드",
-     "how": "선착순",
-     "note": "수량은 기사에 안 나왔어요"
-    },
-    {
-     "what": "어묵 꼬치 또는 붕어빵 (K/DA 역조공 트럭)",
-     "how": "참여 시 증정",
-     "note": "조건·수량은 기사에 안 나왔어요"
-    }
-   ],
-   "link": "https://www.ilovepcbang.com/news/articleView.html?idxno=203099",
-   "source": "manual",
-   "lat": 37.542419,
-   "lng": 127.059111,
-   "added": "2026-11-17"
-  },
   {
    "id": "m-mama-awards-2026-oliveyoung-n-seongsu",
    "title": "2026 MAMA AWARDS 공식 팝업 (올리브영 N성수)",
@@ -156,6 +84,31 @@
    "lat": 37.54647,
    "lng": 127.043465,
    "added": "2026-10-31"
+  },
+  {
+   "id": "m-sensel-market-musinsa-beauty-space1",
+   "title": "센슬 마켓",
+   "kind": "popup",
+   "topic": "beauty",
+   "start": "2026-11-18",
+   "end": "2026-11-29",
+   "place": "무신사 뷰티 스페이스 1",
+   "address": "",
+   "time": "11:00~19:00",
+   "fee": "",
+   "brand": "센슬",
+   "about": "진열대에서 골라 나만의 센슬 키트를 만드는 팝업",
+   "gifts": [
+    {
+     "what": "랜덤 박스",
+     "how": "선착순",
+     "note": "매일 17:00~18:30에 열려요, 받는 조건·수량은 기사에 안 나왔어요"
+    }
+   ],
+   "link": "https://www.specialtimes.co.kr/news/articleView.html?idxno=487771",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-11-23"
   },
   {
    "id": "m-miniteen-snow-play-seongsu",
