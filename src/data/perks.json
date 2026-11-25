@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-25 12:59",
+ "checked": "2026-11-26 05:13",
  "perks": [
   {
    "id": "hyundai-sinchon-beauty-festa-diagnosis",
@@ -160,6 +160,22 @@
    "note": "6종 모두 무료, 앞의 4종은 현장 신청(스킨스캔이 가장 빨리 마감). 7월 기사 기준이라 가기 전에 확인",
    "link": "https://www.hankookilbo.com/news/article/A2026062814200003621",
    "checked": "2026-10-23"
+  },
+  {
+   "id": "ylass-bukchon-free-color-makeup",
+   "title": "와이레스 북촌 무료 퍼스널 컬러 진단·메이크업 시연",
+   "brand": "가히",
+   "channel": "store",
+   "place": "와이레스 북촌",
+   "address": "서울 종로구 북촌로 58",
+   "area": "북촌",
+   "start": "",
+   "end": "",
+   "what": "퍼스널 컬러 진단, 메이크업 시연",
+   "how": "체험",
+   "note": "예약 없이 가도 무료. 3월 기사 기준이라 가기 전에 확인",
+   "link": "https://www.harpersbazaar.co.kr/article/1899226",
+   "checked": "2026-11-25"
   }
  ]
 }
