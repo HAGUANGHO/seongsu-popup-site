@@ -1,6 +1,6 @@
 {
- "checked": "2026-11-27 12:32",
- "updated": "2026-11-24 05:14",
+ "checked": "2026-11-28 05:14",
+ "updated": "2026-11-28 05:14",
  "events": [
   {
    "id": "m-dralthea-oliveyoung-beauty-mansion-2026",
@@ -26,6 +26,31 @@
    "source": "manual",
    "nopin": true,
    "added": "2026-11-17"
+  },
+  {
+   "id": "m-jejuair-nobrand-burger-seongsu-lab",
+   "title": "제주항공 × 노브랜드 버거 팝업",
+   "kind": "popup",
+   "topic": "food",
+   "start": "2026-10-30",
+   "end": "2026-11-28",
+   "place": "노브랜드 버거 성수랩점",
+   "address": "",
+   "time": "",
+   "fee": "",
+   "brand": "제주항공",
+   "about": "항공 테마 스탬프·키링 만들기 체험이 있는 협업 팝업",
+   "gifts": [
+    {
+     "what": "항공권 할인 코드·굿즈·사이드 메뉴",
+     "how": "참여 시 증정",
+     "note": "보딩패스 스탬프, 키링 만들기, 인증사진 이벤트에 참여하면 받아요, 구체 조건·수량은 기사에 안 나왔어요"
+    }
+   ],
+   "link": "https://kbmaeil.com/article/20261030500102",
+   "source": "manual",
+   "nopin": true,
+   "added": "2026-11-28"
   },
   {
    "id": "m-cardcaptor-sakura-tea-party",
